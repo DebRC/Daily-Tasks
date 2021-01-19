@@ -74,7 +74,9 @@ $('#sections').on("click",'input[type=checkbox]', function(){
 $('#sections').on("click",'span.ui-icon-close', function(){
     var index = $(this).closest('li').index();
     var id = $('#main li:eq('+index+') a').attr('href');
-    $('#main li:eq('+index+')').remove();
+    $('#main li:eq('+index+')').hide("slide", { direction: "left" }, 200, function(){
+        $(this).remove();
+    });
     $(id).remove();
     $("#sections").tabs("refresh");
 });
