@@ -1,0 +1,73 @@
+body{
+    background-color: #19456b;
+}
+
+h2{
+    text-align: center;
+    color: #d89216;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 2.4rem;
+    font-style: italic;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+hr{
+    margin: 0;
+    color: #d89216;
+}
+
+button:focus{outline:none !important;}
+
+.container-fluid{
+    margin-top: 50px;
+    padding: 2px 15px;
+    width: 800px;
+    height: 600px;
+    border: 5px inset rgb(255,214,75);
+    background-color: blanchedalmond;
+}
+
+ol li{
+    padding: 2px;
+    cursor: grabbing;
+}
+
+ol li:hover{
+    background-color: #fad586;
+    border: 0.5px solid rgb(238, 148, 14);
+}
+
+.checkbox
+{
+    margin: 0 5px 0 3px;
+    cursor: pointer;
+}
+
+.addSection
+{
+    text-align: right;
+    margin: 12px 2px;
+}
+
+.addTask
+{
+    text-align: right;
+    margin: 12px 2px;
+}
+
+#sectionDialog{
+    display: none;
+}
+
+#taskDialog{
+    display: none;
+}
+
+.ui-icon-close
+{
+    margin-top: 0.5px;
+    margin-right: 3px;
+    transform: scale(1.5);
+    cursor: pointer;
+}
