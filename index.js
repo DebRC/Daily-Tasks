@@ -3,6 +3,8 @@ $("ul").sortable({axis:"x", containment: "#sections"});
 $("ol").sortable({axis:"y", containment: "#sections"});
 $("#addSection").button().click(function(){
     $('#sectionDialog').dialog({
+        width:400,
+        height:200,
         resizable:false,
         modal:true,
         buttons:{
@@ -34,6 +36,8 @@ $("#addSection").button().click(function(){
 
 $("#addTask").button().click(function(){
     $('#taskDialog').dialog({
+        width:400,
+        height:200,
         resizable:false,
         modal:true,
         buttons:{
